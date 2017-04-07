@@ -55,7 +55,7 @@ Game.prototype.checkGuess = function(){
     if(this.pastGuesses.indexOf(this.playersGuess) !== -1) return "You have already guessed that number."
 
     this.pastGuesses.push(this.playersGuess);
-    if(this.guessCount >= 5) return "You Lose."
+    if(this.guessCount >= 5 && this.playersGuess !== this.winningNumber ) return "You Lose."
     if(this.playersGuess === this.winningNumber) return "You Win!";
     if(this.difference() < 10) return 'You\'re burning up!';
     if(this.difference() < 25) return 'You\'re lukewarm.';
