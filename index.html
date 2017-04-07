@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" type='text/css'>
+    <link rel="stylesheet" href="css/style.css" type='text/css'>
+    
+
+  </head>
+  <body>
+      <div class="container">
+          <div id='app' class="center">
+              <!--<div class='row'>-->
+                  <div id='headers'>
+                      <!-- Title and subtitles! -->
+                      <h1>Guessing Game!</h1>
+                      <h2>Guess a number between 1 - 100!</h2>
+                  </div>
+              <!--</div>-->
+
+
+                <div id='main'>
+                    <!--<div class='row'>-->
+                        <div id='input-parent'>
+                            <!-- Player's guess input, and submit button -->
+                            <div class='form-group'>
+                                <input id='player-input' type='text' name='playerInput' class='center' placeholder="#" maxlength='3' autofocus="autofocus">
+                            </div>
+                            <button id='submit' class='btn btn-success'>Go!</button>
+                        </div>
+                    <!--</div>-->
+
+                    <!--<div class='row'>-->
+                        <div id='guesses'>
+                        <!-- unordered list of guesses -->
+                            <ul>
+                                <li class='guess'>-</li>
+                                <li class='guess'>-</li>
+                                <li class='guess'>-</li>
+                                <li class='guess'>-</li>
+                                <li class='guess'>-</li>
+                            </ul>
+                        </div>
+                    <!--</div>-->
+
+                    <!--<div class='row'>-->
+                        <div id="menu-btns" class="center">
+                        <!-- reset and hint buttons -->
+                            <button id='reset' class='btn btn-warning'>Reset</button>
+                            <button id='hint' class='btn btn-info'>Hint</button>
+                        </div>
+                    <!--</div>-->
+                </div>
+          </div>
+      </div> <!--div for .container-->
+
+          <div id='footer' class="center">
+              <div class='row'>
+                <div class='col-sm-4'>
+                    <img class='img-responsive center-block' src='img/fa-logo@2x.png'></img>
+                </div>
+
+                <div class='col-sm-4'>
+                    <h4>Project by Han Gu</h4>
+                </div>
+
+                <div class='col-sm-4'>
+                    <img  class='img-responsive center-block' src='img/grace_hopper_academy.png'></img>
+                </div>
+              </div>
+          </div>
+
+      <script src="js/jquery-3.2.0.min.js"></script>
+      <script src="js/GuessingGame.js"></script>
+  </body>
+</html>
